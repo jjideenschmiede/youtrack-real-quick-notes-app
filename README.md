@@ -6,8 +6,10 @@ A YouTrack dashboard widget for jotting down quick notes directly inline with au
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/youtrack-certified-partner-white.svg">
-  <img src="docs/images/youtrack-certified-partner-black.svg" alt="YouTrack Certified Partner">
+  <img src="docs/images/youtrack-certified-partner-black.svg" alt="YouTrack Certified Partner" height="120">
 </picture>
+<img src="docs/images/spacer.png" width="40" height="1" alt="">
+<img src="docs/images/youtrack-honored-app-creator.png" alt="Honored YouTrack App Creator" height="120">
 
 ## YouTrack Apps, TeamCity Plugins & more
 
