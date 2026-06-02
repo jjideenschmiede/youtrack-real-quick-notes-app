@@ -3,7 +3,7 @@
   "name": "real-quick-notes",
   "title": "Real Quick Notes",
   "description": "A real quick-note app for YouTrack: write your notes directly inside the widget with auto-save, no detour through the widget settings.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "vendor": {
     "name": "J&J Ideenschmiede GmbH",
     "url": "https://jj-ideenschmiede.de",

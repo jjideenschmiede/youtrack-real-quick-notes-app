@@ -1,7 +1,7 @@
 {
   "name": "youtrack-real-quick-notes-app",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.app.json && vite build && youtrack-app validate dist",
