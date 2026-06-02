@@ -31,7 +31,7 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.0.0",
     "sass": "^1.87.0",
-    "typescript": "^5.7.2",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^8.0.16",
     "vite-plugin-static-copy": "^3.0.0"
