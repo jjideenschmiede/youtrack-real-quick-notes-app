@@ -32,7 +32,7 @@ jobs:
       - name: Upload to JetBrains Marketplace
         env:
           MARKETPLACE_TOKEN: ${{ secrets.JETBRAINS_MARKETPLACE_TOKEN }}
-          PLUGIN_ID: ${{ secrets.JETBRAINS_MARKETPLACE_PLUGIN_ID }}
+          PLUGIN_ID: ${{ vars.JETBRAINS_MARKETPLACE_PLUGIN_ID }}
           CHANNEL: ${{ github.event.release.prerelease && 'eap' || '' }}
         run: |
           curl --fail-with-body \
