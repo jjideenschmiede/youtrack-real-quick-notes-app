@@ -76,3 +76,4 @@ type YTAppInterface = {
 declare global {
 	const YTApp: YTAppInterface;
 }
+
