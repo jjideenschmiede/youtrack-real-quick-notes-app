@@ -1,0 +1,39 @@
+{
+  "name": "youtrack-real-quick-notes-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.app.json && vite build && youtrack-app validate dist",
+    "lint": "eslint --report-unused-disable-directives --max-warnings 0",
+    "pack": "rm -f youtrack-real-quick-notes-app.zip && (cd dist && npx bestzip ../youtrack-real-quick-notes-app.zip .)",
+    "upload": "youtrack-app upload dist"
+  },
+  "dependencies": {
+    "@jetbrains/ring-ui-built": "^7.0.8",
+    "core-js": "3.48.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^2.0.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.13.0",
+    "@jetbrains/eslint-config": "^6.0.2",
+    "@jetbrains/youtrack-apps-tools": "^0.0.1",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "globals": "^17.0.0",
+    "sass": "^1.87.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^7.1.7",
+    "vite-plugin-static-copy": "^3.0.0"
+  }
+}

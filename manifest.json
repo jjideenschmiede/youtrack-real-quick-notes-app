@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/youtrack-app.json",
+  "name": "real-quick-notes",
+  "title": "Real Quick Notes",
+  "description": "A real quick-note app for YouTrack: write your notes directly inside the widget with auto-save, no detour through the widget settings.",
+  "version": "1.0.0",
+  "vendor": {
+    "name": "J&J Ideenschmiede GmbH",
+    "url": "https://jj-ideenschmiede.de",
+    "email": "support@jj-ideenschmiede.de"
+  },
+  "icon": "icon.svg",
+  "minYouTrackVersion": "2024.3.0",
+  "widgets": [
+    {
+      "key": "quick-note-widget",
+      "name": "Real Quick Notes",
+      "description": "Write your note directly in the widget. Changes are saved automatically.",
+      "extensionPoint": "DASHBOARD_WIDGET",
+      "indexPath": "widgets/quick-note/index.html",
+      "settingsSchemaPath": "widgets/quick-note/widget-settings.json"
+    }
+  ]
+}

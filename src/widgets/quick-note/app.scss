@@ -1,0 +1,48 @@
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+.widget {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--ring-unit);
+	padding: calc(var(--ring-unit) * 2);
+	box-sizing: border-box;
+}
+
+.widget--loading {
+	opacity: 0;
+}
+
+.widget__body {
+	flex: 1;
+	resize: none;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: var(--ring-text-color);
+	font-family: inherit;
+	font-size: var(--ring-font-size);
+	line-height: var(--ring-line-height);
+	padding: 0;
+}
+
+.widget__body::placeholder {
+	color: var(--ring-secondary-color);
+}
+
+.widget__status {
+	font-size: var(--ring-font-size-smaller);
+	color: var(--ring-secondary-color);
+	min-height: var(--ring-line-height-lowest);
+	text-align: right;
+}
+
+.ring-form > .config-buttons {
+	margin-top: calc(var(--ring-unit) * 2);
+}

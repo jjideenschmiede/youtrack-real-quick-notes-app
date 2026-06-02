@@ -1,0 +1,11 @@
+{
+  "title": "Real Quick Notes Settings",
+  "type": "object",
+  "properties": {
+    "title": {
+      "title": "Title",
+      "type": "string",
+      "description": "Title of the widget shown in the header."
+    }
+  }
+}

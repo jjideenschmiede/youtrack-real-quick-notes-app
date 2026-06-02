@@ -1,0 +1,22 @@
+name: Pull Request Labels
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  pull-request-labels:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Add label to pull request
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const script = require('.github/workflows/scripts/labels.cjs')
+            script({github, context})
