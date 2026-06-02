@@ -77,4 +77,3 @@ declare global {
 	const YTApp: YTAppInterface;
 }
 
-declare module '*.css';
