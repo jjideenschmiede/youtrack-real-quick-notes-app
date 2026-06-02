@@ -1,8 +1,11 @@
-name: NPM Test
+name: Release Asset
 
 on:
-  pull_request:
-    types: [opened, synchronize]
+  release:
+    types: [published]
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -24,3 +27,11 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=4096
         run: npm run build
+
+      - name: Pack YouTrack App
+        run: npm run pack
+
+      - name: Upload asset to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload "${{ github.event.release.tag_name }}" youtrack-real-quick-notes-app.zip --clobber
