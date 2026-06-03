@@ -38,6 +38,7 @@ export default defineConfig({
 		outDir: "../dist",
 		emptyOutDir: true,
 		copyPublicDir: false,
+		cssMinify: "esbuild",
 		target: ["es2022"],
 		assetsDir: "widgets/assets",
 		rollupOptions: {
